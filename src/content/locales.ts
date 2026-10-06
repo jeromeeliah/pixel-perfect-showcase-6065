@@ -170,7 +170,7 @@ const en: Dict = {
     alsoOn: "Also find us on",
     whatsappGreeting: "Hello Tigida — I’d like to ask about a stay.",
   },
-  footer: { placeholderNote: "Photographs on this site are temporary placeholders and do not depict Auberge Tigida.", rights: "All rights reserved." },
+  footer: { placeholderNote: "Room photographs are temporary placeholders.", rights: "All rights reserved." },
   placeholderImage: "Placeholder image",
   legal: {
     title: "Mentions légales",
@@ -281,7 +281,7 @@ const fr: Dict = {
     alsoOn: "Nous trouver aussi sur",
     whatsappGreeting: "Bonjour Tigida — j’aimerais me renseigner pour un séjour.",
   },
-  footer: { placeholderNote: "Les photographies de ce site sont provisoires et ne représentent pas l’Auberge Tigida.", rights: "Tous droits réservés." },
+  footer: { placeholderNote: "Les photos des chambres sont provisoires.", rights: "Tous droits réservés." },
   placeholderImage: "Image provisoire",
   legal: {
     title: "Mentions légales",
@@ -392,7 +392,7 @@ const de: Dict = {
     alsoOn: "Sie finden uns auch auf",
     whatsappGreeting: "Hallo Tigida — ich möchte nach einem Aufenthalt fragen.",
   },
-  footer: { placeholderNote: "Die Fotografien auf dieser Website sind Platzhalter und zeigen nicht die Auberge Tigida.", rights: "Alle Rechte vorbehalten." },
+  footer: { placeholderNote: "Die Zimmerfotos sind Platzhalter.", rights: "Alle Rechte vorbehalten." },
   placeholderImage: "Platzhalterbild",
   legal: {
     title: "Mentions légales",
@@ -503,7 +503,7 @@ const es: Dict = {
     alsoOn: "También en",
     whatsappGreeting: "Hola Tigida — quisiera preguntar por una estancia.",
   },
-  footer: { placeholderNote: "Las fotografías de este sitio son provisionales y no muestran Auberge Tigida.", rights: "Todos los derechos reservados." },
+  footer: { placeholderNote: "Las fotos de las habitaciones son provisionales.", rights: "Todos los derechos reservados." },
   placeholderImage: "Imagen provisional",
   legal: {
     title: "Mentions légales",

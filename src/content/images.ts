@@ -41,17 +41,17 @@ export type SiteImage = {
 };
 
 export const images = {
-  "hero-desert": { src: p0.url, alt: "Low sun over rippled dunes", width: 1600, height: 1200, placeholder: false },
-  "tigida-exterior": { src: p1.url, alt: "A shaded reed terrace looking onto palms and earthen walls", width: 900, height: 1600, placeholder: false },
-  "house-detail": { src: p2.url, alt: "Reed roof, tamarisk trunks and an earthen balustrade", width: 1600, height: 900, placeholder: false },
-  "palm-grove": { src: p3.url, alt: "Dusk over an earthen house and palm grove", width: 1600, height: 1200, placeholder: false },
+  "hero-desert": { src: q0.url, alt: "Sunset over the dunes of Erg Chegaga", width: 1600, height: 1200, placeholder: false },
+  "tigida-exterior": { src: q1.url, alt: "The lantern-lit gate of the guesthouse beneath the palms", width: 1600, height: 1200, placeholder: false },
+  "house-detail": { src: q2.url, alt: "The inner courtyard with tamarisk and palms at dusk", width: 1600, height: 1200, placeholder: false },
+  "palm-grove": { src: q5.url, alt: "Sunset through the palm grove beyond the courtyard wall", width: 1600, height: 1200, placeholder: false },
   "host-portrait": { src: p4.url, alt: "Preparing a tagine on rugs at the foot of a dune", width: 1600, height: 1200, placeholder: false },
   "textile-detail": { src: p5.url, alt: "Shearing wool in the shade of the palms", width: 1600, height: 1200, placeholder: false },
   "tea": { src: p6.url, alt: "A tagine just opened, on a woven blanket", width: 1200, height: 1600, placeholder: false },
   "desert-experience": { src: p7.url, alt: "Loading a camel for a desert walk", width: 1600, height: 1200, placeholder: false },
   "desert-walk": { src: p8.url, alt: "A lone walker crossing the dunes", width: 1600, height: 1200, placeholder: false },
-  "desert-stone": { src: p9.url, alt: "Acacia plain on a windy day", width: 1200, height: 1600, placeholder: false },
-  "night-sky": { src: p10.url, alt: "A fire lit at dusk among the dunes", width: 1600, height: 1200, placeholder: false },
+  "desert-stone": { src: q4.url, alt: "Lunch laid out in the shade of a tamarisk, the truck nearby", width: 1600, height: 1200, placeholder: false },
+  "night-sky": { src: q3.url, alt: "Moonlight and stars over the dunes, a camp glowing below", width: 1600, height: 1200, placeholder: false },
   "night-horizon": { src: p11.url, alt: "A figure walking the ridge at sunset", width: 1600, height: 1200, placeholder: false },
   "g-courtyard": { src: p12.url, alt: "Watering the courtyard, palms beyond the wall", width: 899, height: 1599, placeholder: false },
   "g-tent": { src: p13.url, alt: "Canvas tent under a wide sky", width: 1600, height: 1200, placeholder: false },
