@@ -123,7 +123,7 @@ export function Masthead({ locale, page, overHero }: { locale: Locale; page: "ho
 
               <aside className="flex flex-col justify-end gap-10 border-t border-border pt-8 md:col-span-4 md:border-l md:border-t-0 md:pl-10 md:pt-0">
                 <div>
-                  <p className="meta mb-3 text-muted-foreground">Language</p>
+                  
                   <LangSwitch locale={locale} page={page} onNavigate={() => setOpen(false)} />
                 </div>
                 <div>
