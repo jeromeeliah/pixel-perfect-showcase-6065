@@ -2,21 +2,21 @@
  * IMAGE ROLES — the only place image sources live.
  *
  * Real photos from Tigida; room images are still generated placeholders. To use real photography, replace `src` for a role
- * (drop the file in src/assets and import q0 from "@/assets/tigida-52-21_7.jpg.asset.json";
+ * (drop the file in src/assets and import it) and set `placeholder: false`.
+ */
+import q0 from "@/assets/tigida-52-21_7.jpg.asset.json";
 import q1 from "@/assets/tigida-52-21_10.jpg.asset.json";
 import q2 from "@/assets/tigida-52-21_19.jpg.asset.json";
 import q3 from "@/assets/tigida-52-21_16.jpg.asset.json";
 import q4 from "@/assets/tigida-52-21_3.jpg.asset.json";
 import q5 from "@/assets/tigida-52-21_5.jpg.asset.json";
-import it) and set `placeholder: false`.
- */
 import room01 from "@/assets/room-01.jpg";
 import room02 from "@/assets/room-02.jpg";
 import room03 from "@/assets/room-03.jpg";
 import p0 from "@/assets/tigida-40-02_6.jpg.asset.json";
 import p1 from "@/assets/tigida-32-45_20.jpg.asset.json";
 import p2 from "@/assets/tigida-9.jpg.asset.json";
-import p3 from "@/assets/tigida-17.jpg.asset.json";
+import p3 from "@/assets/tigida-32-45_17.jpg.asset.json";
 import p4 from "@/assets/tigida-27.jpg.asset.json";
 import p5 from "@/assets/tigida-43-38.jpg.asset.json";
 import p6 from "@/assets/tigida-5.jpg.asset.json";
@@ -34,7 +34,7 @@ import p17 from "@/assets/tigida-41-53_6.jpg.asset.json";
 import p18 from "@/assets/tigida-41-53_2.jpg.asset.json";
 import p19 from "@/assets/tigida-40-03.jpg.asset.json";
 import p20 from "@/assets/tigida-40-03_24.jpg.asset.json";
-import p21 from "@/assets/tigida-19.jpg.asset.json";
+import p21 from "@/assets/tigida-32-45_19.jpg.asset.json";
 import p22 from "@/assets/tigida-7.jpg.asset.json";
 
 export type SiteImage = {
