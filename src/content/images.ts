@@ -17,7 +17,7 @@ import p0 from "@/assets/tigida-40-02_6.jpg.asset.json";
 import p1 from "@/assets/tigida-32-45_20.jpg.asset.json";
 import p2 from "@/assets/tigida-9.jpg.asset.json";
 import p3 from "@/assets/tigida-32-45_17.jpg.asset.json";
-import p4 from "@/assets/tigida-27.jpg.asset.json";
+import p4 from "@/assets/tigida-8.jpg.asset.json";
 import p5 from "@/assets/tigida-43-38.jpg.asset.json";
 import p6 from "@/assets/tigida-5.jpg.asset.json";
 import p7 from "@/assets/tigida-2.jpg.asset.json";
