@@ -47,7 +47,7 @@ export type SiteImage = {
 };
 
 export const images = {
-  "hero-desert": { src: q0.url, alt: "Sunset over the dunes of Erg Chegaga", width: 1600, height: 1200, placeholder: false },
+  "hero-desert": { src: q0.url, alt: "Sunset over the dunes", width: 1600, height: 1200, placeholder: false },
   "tigida-exterior": { src: q1.url, alt: "The lantern-lit gate of the guesthouse beneath the palms", width: 1600, height: 1200, placeholder: false },
   "house-detail": { src: q2.url, alt: "The inner courtyard with tamarisk and palms at dusk", width: 1600, height: 1200, placeholder: false },
   "palm-grove": { src: q5.url, alt: "Sunset through the palm grove beyond the courtyard wall", width: 1600, height: 1200, placeholder: false },
