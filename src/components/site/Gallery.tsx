@@ -78,8 +78,8 @@ export function Gallery({ d }: { d: Dict }) {
           <div className="relative flex min-h-0 flex-1 items-center justify-center px-5 md:px-24">
             <img
               key={active}
-              src={images[galleryItems[active].role].src}
-              alt={images[galleryItems[active].role].alt}
+              src={images[galleryItems[active]!.role].src}
+              alt={images[galleryItems[active]!.role].alt}
               className="menu-item-in max-h-full max-w-full object-contain"
             />
             <button type="button" onClick={() => step(-1)} aria-label={d.gallery.prev} className="meta absolute left-0 top-0 hidden h-full w-1/4 cursor-w-resize items-center pl-10 opacity-0 transition-opacity hover:opacity-100 focus-visible:opacity-100 md:flex">
@@ -90,12 +90,12 @@ export function Gallery({ d }: { d: Dict }) {
             </button>
           </div>
           <div className="flex items-baseline justify-between gap-6 px-5 py-5 md:px-10">
-            <p className="caption">{images[galleryItems[active].role].alt}</p>
+            <p className="caption">{images[galleryItems[active]!.role].alt}</p>
             <div className="meta flex gap-6 md:hidden">
               <button type="button" onClick={() => step(-1)}>← {d.gallery.prev}</button>
               <button type="button" onClick={() => step(1)}>{d.gallery.next} →</button>
             </div>
-            {images[galleryItems[active].role].placeholder && (
+            {images[galleryItems[active]!.role].placeholder && (
               <span className="meta hidden text-[0.6rem] text-muted-foreground md:inline">{d.placeholderImage}</span>
             )}
           </div>

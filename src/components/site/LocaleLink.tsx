@@ -13,14 +13,15 @@ type Props = {
   lang?: string;
 };
 
-export function LocaleLink({ locale, page, hash, children, ...rest }: Props) {
+export function LocaleLink({ locale, page, hash: h, children, ...rest }: Props) {
+  const hash = h ?? "";
   if (page === "home") {
     return locale === "en" ? (
-      <Link to="/" hash={hash} {...rest}>
+      <Link to="/" {...(hash ? { hash } : {})} {...rest}>
         {children}
       </Link>
     ) : (
-      <Link to="/$lang" params={{ lang: locale }} hash={hash} {...rest}>
+      <Link to="/$lang" params={{ lang: locale }} {...(hash ? { hash } : {})} {...rest}>
         {children}
       </Link>
     );

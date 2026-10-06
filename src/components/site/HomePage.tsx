@@ -192,7 +192,7 @@ function Rooms({ d }: { d: Dict }) {
         <p className="prose-editorial mt-8 max-w-md italic text-muted-foreground md:ml-[25%]">{d.rooms.intro}</p>
         <div className="mt-20 space-y-24 md:mt-32 md:space-y-40">
           {rooms.map((r, i) => {
-            const L = roomLayouts[i % roomLayouts.length];
+            const L = roomLayouts[i % roomLayouts.length]!;
             return (
               <article key={r.id} className="grid gap-8 md:grid-cols-12 md:gap-x-6" aria-labelledby={`room-${r.id}`}>
                 <Figure role={r.image} aspect={L.aspect} className={L.fig} placeholderLabel={d.placeholderImage} />
@@ -295,7 +295,7 @@ function Desert({ d }: { d: Dict }) {
               );
             })}
           </div>
-          <p className="caption mt-3">{images[experiences[active].image].alt}</p>
+          <p className="caption mt-3">{images[experiences[active]!.image].alt}</p>
         </div>
 
         <ol className="border-t border-border md:col-span-4">
