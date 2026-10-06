@@ -5,10 +5,10 @@ import type { Locale } from "@/content/locales";
 type Props = {
   locale: Locale;
   page: "home" | "legal";
-  hash?: string;
+  hash?: string | undefined;
   className?: string;
   children: ReactNode;
-  onClick?: () => void;
+  onClick?: (() => void) | undefined;
   "aria-current"?: "page" | undefined;
   lang?: string;
 };

@@ -6,8 +6,8 @@ export type StayRequest = {
   guests: string;
   name: string;
   email: string;
-  whatsapp?: string;
-  message?: string;
+  whatsapp?: string | undefined;
+  message?: string | undefined;
   locale: string;
 };
 
