@@ -1,18 +1,35 @@
 /**
  * IMAGE ROLES — the only place image sources live.
  *
- * Every image here is a TEMPORARY PLACEHOLDER (Unsplash or generated) and does
- * NOT depict Auberge Tigida. To use real photography, replace `src` for a role
+ * Real photos from Tigida; room images are still generated placeholders. To use real photography, replace `src` for a role
  * (drop the file in src/assets and import it) and set `placeholder: false`.
  */
 import room01 from "@/assets/room-01.jpg";
 import room02 from "@/assets/room-02.jpg";
 import room03 from "@/assets/room-03.jpg";
-import exterior from "@/assets/tigida-exterior.jpg";
-import houseDetail from "@/assets/house-detail.jpg";
-import textile from "@/assets/textile-detail.jpg";
-import tea from "@/assets/tea.jpg";
-import hostPortrait from "@/assets/host-portrait.jpg";
+import p0 from "@/assets/tigida-40-02_6.jpg.asset.json";
+import p1 from "@/assets/tigida-32-45_20.jpg.asset.json";
+import p2 from "@/assets/tigida-9.jpg.asset.json";
+import p3 from "@/assets/tigida-17.jpg.asset.json";
+import p4 from "@/assets/tigida-27.jpg.asset.json";
+import p5 from "@/assets/tigida-43-38.jpg.asset.json";
+import p6 from "@/assets/tigida-5.jpg.asset.json";
+import p7 from "@/assets/tigida-2.jpg.asset.json";
+import p8 from "@/assets/tigida-40-03_4.jpg.asset.json";
+import p9 from "@/assets/tigida-11.jpg.asset.json";
+import p10 from "@/assets/tigida-40-03_12.jpg.asset.json";
+import p11 from "@/assets/tigida-40-03_3.jpg.asset.json";
+import p12 from "@/assets/tigida-10.jpg.asset.json";
+import p13 from "@/assets/tigida-4.jpg.asset.json";
+import p14 from "@/assets/tigida-3.jpg.asset.json";
+import p15 from "@/assets/tigida-40-03_15.jpg.asset.json";
+import p16 from "@/assets/tigida-40-03_23.jpg.asset.json";
+import p17 from "@/assets/tigida-41-53_6.jpg.asset.json";
+import p18 from "@/assets/tigida-41-53_2.jpg.asset.json";
+import p19 from "@/assets/tigida-40-03.jpg.asset.json";
+import p20 from "@/assets/tigida-40-03_24.jpg.asset.json";
+import p21 from "@/assets/tigida-19.jpg.asset.json";
+import p22 from "@/assets/tigida-7.jpg.asset.json";
 
 export type SiteImage = {
   src: string;
@@ -23,104 +40,48 @@ export type SiteImage = {
   credit?: string;
 };
 
-const unsplash = (id: string, w = 1800) =>
-  `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=72`;
-
 export const images = {
-  "hero-desert": {
-    src: unsplash("1542401886-65d6c61db217", 2200),
-    alt: "Soft dunes under a pale evening sky",
-    width: 2200,
-    height: 1467,
-    placeholder: true,
-    credit: "Unsplash",
-  },
-  "tigida-exterior": {
-    src: exterior,
-    alt: "An earthen courtyard with a single palm and a wooden bench",
-    width: 1600,
-    height: 1200,
-    placeholder: true,
-  },
-  "house-detail": {
-    src: houseDetail,
-    alt: "Raking light across a mud-plastered wall and wooden shutter",
-    width: 1024,
-    height: 1280,
-    placeholder: true,
-  },
-  "palm-grove": {
-    src: unsplash("1489749798305-4fea3ae63d43"),
-    alt: "Earthen houses below a dense palm grove, mountains beyond",
-    width: 1800,
-    height: 1200,
-    placeholder: true,
-    credit: "Unsplash",
-  },
-  "host-portrait": {
-    src: hostPortrait,
-    alt: "An open wooden door in an earthen wall, a shadow on the ground",
-    width: 1024,
-    height: 1344,
-    placeholder: true,
-  },
+  "hero-desert": { src: p0.url, alt: "Low sun over rippled dunes", width: 1600, height: 1200, placeholder: false },
+  "tigida-exterior": { src: p1.url, alt: "A shaded reed terrace looking onto palms and earthen walls", width: 900, height: 1600, placeholder: false },
+  "house-detail": { src: p2.url, alt: "Reed roof, tamarisk trunks and an earthen balustrade", width: 1600, height: 900, placeholder: false },
+  "palm-grove": { src: p3.url, alt: "Dusk over an earthen house and palm grove", width: 1600, height: 1200, placeholder: false },
+  "host-portrait": { src: p4.url, alt: "Preparing a tagine on rugs at the foot of a dune", width: 1600, height: 1200, placeholder: false },
+  "textile-detail": { src: p5.url, alt: "Shearing wool in the shade of the palms", width: 1600, height: 1200, placeholder: false },
+  "tea": { src: p6.url, alt: "A tagine just opened, on a woven blanket", width: 1200, height: 1600, placeholder: false },
+  "desert-experience": { src: p7.url, alt: "Loading a camel for a desert walk", width: 1600, height: 1200, placeholder: false },
+  "desert-walk": { src: p8.url, alt: "A lone walker crossing the dunes", width: 1600, height: 1200, placeholder: false },
+  "desert-stone": { src: p9.url, alt: "Acacia plain on a windy day", width: 1200, height: 1600, placeholder: false },
+  "night-sky": { src: p10.url, alt: "A fire lit at dusk among the dunes", width: 1600, height: 1200, placeholder: false },
+  "night-horizon": { src: p11.url, alt: "A figure walking the ridge at sunset", width: 1600, height: 1200, placeholder: false },
+  "g-courtyard": { src: p12.url, alt: "Watering the courtyard, palms beyond the wall", width: 899, height: 1599, placeholder: false },
+  "g-tent": { src: p13.url, alt: "Canvas tent under a wide sky", width: 1600, height: 1200, placeholder: false },
+  "g-palms": { src: p14.url, alt: "Riding toward the palm grove", width: 1600, height: 1200, placeholder: false },
+  "g-camels": { src: p15.url, alt: "Two camels resting in the shade", width: 1600, height: 1200, placeholder: false },
+  "g-dunes": { src: p16.url, alt: "Dune crests in morning light", width: 1600, height: 1200, placeholder: false },
+  "g-kasbah": { src: p17.url, alt: "Looking up through an old kasbah", width: 1200, height: 1600, placeholder: false },
+  "g-lane": { src: p18.url, alt: "A covered lane in the old ksar", width: 1200, height: 1600, placeholder: false },
+  "g-shade": { src: p19.url, alt: "A rug laid out under tamarisk trees", width: 1600, height: 1200, placeholder: false },
+  "g-sandals": { src: p20.url, alt: "Sandals and a wrapped water bottle by camp", width: 1600, height: 1200, placeholder: false },
+  "g-sunset": { src: p21.url, alt: "Sunset through tamarisk branches", width: 1600, height: 1200, placeholder: false },
+  "g-dune-top": { src: p22.url, alt: "Walkers on the crest of a high dune", width: 720, height: 1280, placeholder: false },
   "room-01": { src: room01, alt: "A simple bedroom with an earth wall and a striped blanket", width: 1280, height: 1600, placeholder: true },
   "room-02": { src: room02, alt: "Two beds and a door opening onto palms", width: 1600, height: 1104, placeholder: true },
   "room-03": { src: room03, alt: "Floor cushions and a low table, palm shadows on the wall", width: 1280, height: 1600, placeholder: true },
-  "textile-detail": { src: textile, alt: "Folded woven wool in indigo, cream and rust", width: 1024, height: 1024, placeholder: true },
-  tea: { src: tea, alt: "Hands pouring tea into a small glass", width: 1024, height: 1280, placeholder: true },
-  "desert-experience": {
-    src: unsplash("1489493585363-d69421e0edd3"),
-    alt: "A line of camels crossing a high dune",
-    width: 1800,
-    height: 1200,
-    placeholder: true,
-    credit: "Unsplash",
-  },
-  "desert-walk": {
-    src: unsplash("1473580044384-7ba9967e16a0"),
-    alt: "Footprints across rippled sand toward the sun",
-    width: 1800,
-    height: 1200,
-    placeholder: true,
-    credit: "Unsplash",
-  },
-  "desert-stone": {
-    src: unsplash("1547234935-80c7145ec969"),
-    alt: "Red sand plain and distant rock formations",
-    width: 1800,
-    height: 1200,
-    placeholder: true,
-    credit: "Unsplash",
-  },
-  "night-sky": {
-    src: unsplash("1517824806704-9040b037703b", 2000),
-    alt: "The Milky Way above a small lit tent",
-    width: 2000,
-    height: 1333,
-    placeholder: true,
-    credit: "Unsplash",
-  },
-  "night-horizon": {
-    src: unsplash("1419242902214-272b3f66ee7a"),
-    alt: "Stars over a dark ridge at dusk",
-    width: 1800,
-    height: 1200,
-    placeholder: true,
-    credit: "Unsplash",
-  },
 } satisfies Record<string, SiteImage>;
 
 export type ImageRole = keyof typeof images;
 
 /** Gallery order + layout hint. Change freely. */
 export const galleryItems: { role: ImageRole; shape: "wide" | "tall" | "square" | "small" }[] = [
-  { role: "palm-grove", shape: "wide" },
-  { role: "house-detail", shape: "tall" },
-  { role: "textile-detail", shape: "small" },
-  { role: "desert-walk", shape: "wide" },
-  { role: "room-03", shape: "tall" },
-  { role: "tea", shape: "small" },
-  { role: "night-horizon", shape: "wide" },
-  { role: "desert-stone", shape: "square" },
+  { role: "g-courtyard", shape: "tall" },
+  { role: "g-palms", shape: "wide" },
+  { role: "g-kasbah", shape: "small" },
+  { role: "g-tent", shape: "wide" },
+  { role: "g-dune-top", shape: "tall" },
+  { role: "g-camels", shape: "square" },
+  { role: "g-sandals", shape: "small" },
+  { role: "g-dunes", shape: "wide" },
+  { role: "g-lane", shape: "tall" },
+  { role: "g-shade", shape: "square" },
+  { role: "g-sunset", shape: "wide" },
 ];
