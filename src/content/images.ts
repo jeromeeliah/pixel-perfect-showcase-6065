@@ -2,7 +2,13 @@
  * IMAGE ROLES — the only place image sources live.
  *
  * Real photos from Tigida; room images are still generated placeholders. To use real photography, replace `src` for a role
- * (drop the file in src/assets and import it) and set `placeholder: false`.
+ * (drop the file in src/assets and import q0 from "@/assets/tigida-52-21_7.jpg.asset.json";
+import q1 from "@/assets/tigida-52-21_10.jpg.asset.json";
+import q2 from "@/assets/tigida-52-21_19.jpg.asset.json";
+import q3 from "@/assets/tigida-52-21_16.jpg.asset.json";
+import q4 from "@/assets/tigida-52-21_3.jpg.asset.json";
+import q5 from "@/assets/tigida-52-21_5.jpg.asset.json";
+import it) and set `placeholder: false`.
  */
 import room01 from "@/assets/room-01.jpg";
 import room02 from "@/assets/room-02.jpg";
